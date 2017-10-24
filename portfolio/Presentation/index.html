@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <meta name="description" content="Ceci est ma page de pr&#233;sentation" />
+      <meta name="keywords" content="HTML, CSS, JS, PHP, SQL" />
+      <meta name="author" content="Dominique LUNG YUT FONG" />
+      <!-- Perso CSS -->
+      <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+      <!-- Appel du CSS de font-awesome pour les ic&#244;nes -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <title>Pr&#233;sentation</title>
+      <!-- Police de google font -->
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Appel du css -->
+      <link rel="stylesheet" href="css/style.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- Appel du js -->
+      <script src="js/chart.js"></script>
+   </head>
+   <body>
+      <!-- HEADER -->
+      <header>
+         <a href="index.html"> Mon portfolio</a>
+         <nav class="container">
+            <a href="../index.html"><i class="fa fa-home"></i> Accueil</a>
+            <a href="../Realisation/index.html"><i class="fa fa-folder-open"></i> R&#233;alisation</a>
+            <a href="../Contact/index.php"><i class="fa fa-envelope"></i> Contact</a>
+         </nav>
+      </header>
+      <!-- MAIN CONTENT -->
+      <main class="container clear">
+        <h1>D&#233;velopeur Web</h1>
+          <p class="presentation">
+            Je m'appelle Dominique LUNG YUT FONG. J'ai v&#233;cu &#224; la R&#233;union et c'est en 2016 que j'emm&#233;nage &#224; Paris &#224; l'&#226;ge de 29 ans.
+            Passion&#233; par l'environnement web et technologique, j'ai d&#233;cid&#233; de faire une formation &#224; la 3W Academy de Paris.
+            J'aimerais, par la suite, exercer une activit&#233; professionnelle au sein d'une entreprise tout en am&#233;liorant mes comp&#233;tences dans le domaine du web.
+          </p>
+          <hr />
+          <div id="liseret"></div>
+          <div id="contenu">
+            <!-- SECTION 1 -->
+            <section class="float1">
+              <h2>Mes formations</h2>
+                <ul>
+                    <li>
+                        Formation de d&#233;veloppeur et int&#233;grateur web de trois mois &#224; la 3W Academy
+                    </li>
+                    <li>
+                        Autodidacte sur OpenClassrooms
+                    </li>
+                </ul>
+               </section>
+               <!-- SECTiON 2 -->
+               <section class="float1">
+                  <h2>Mes dipl&#244;mes</h2>
+                  <ul>
+                     <li>
+                        Licence AES (Administration &#201;conomie et Sociale) <br />
+                        Universit&#233; de la R&#233;union - R&#233;union 97490
+                     </li>
+                     <li>
+                        BAC STG (sp&#233;cialit&#233; Comptabilit&#233; et Finance des Entreprises) - Lyc&#233;e Leconte de Lisle - 97490
+                     </li>
+                  </ul>
+               </section>
+               <!-- SECTION 3-->
+               <section class="competence">
+                  <h2>Mes comp&#233;tences</h2>
+                  <ul class="color">
+                     <li class="color1">html</li>
+                     <li class="color2">css</li>
+                     <li class="color3">js</li>
+                     <li class="color4">php</li>
+                  </ul>
+                  <div id="canvas" class="container">
+                     <canvas id="product" width="300" height="200"></canvas>
+                     <script>
+                        var data = [
+                        {
+                          value: 90,
+                          color:"#f3453c",
+                          highlight: "#FF5A5E",
+                          label: "HTML"
+                        },
+                        {
+                          value: 90,
+                          color: "#f4813a",
+                          highlight: "#fc9e67",
+                          label: "CSS"
+                        },
+                        {
+                          value: 50,
+                          color: "#f5ae28",
+                          highlight: "#FFC870",
+                          label: "JS"
+                        },
+                        {
+                          value:50,
+                          color:"#ffe100",
+                          highlight: "#FFC870",
+                          label: "PHP"
+                        },
+
+
+                        ]
+                        var myDoughnutChart = new Chart(document.getElementById("product").getContext("2d")).Doughnut(data, {segmentShowStroke : false});
+                     </script>
+                  </div>
+               </section>
+            </div>
+      </main>
+      <footer>
+        <p>
+          Portfolio - 2017 : Dominique <span>lung yut fong</span>
+        </p>
+      </footer>
+   </body>
+</html>

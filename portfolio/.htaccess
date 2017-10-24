@@ -1,0 +1,5 @@
+RewriteEngine on
+Rewritecond %{HTTP_HOST} ^dom-lungyutfong.fr
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+Rewriterule ^(.*) http://www.dom-lungyutfong.fr/$1 [QSA,L,R=301]

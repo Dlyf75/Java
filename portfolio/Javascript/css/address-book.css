@@ -1,0 +1,85 @@
+a {
+    color: #c0392b;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+a:hover {
+    color: #FF6F69;
+}
+
+body {
+    /* structure */
+    margin: 0 auto;
+    padding: 1em;
+    min-height: 100%;
+    width: 80%;
+    /* presentation */
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    /* structure */
+    height: 100%;
+    /* presentation */
+    background-color: #bdc3c7;
+}
+
+
+h1 {
+    color: #34495e;
+}
+
+hr {
+    border-color: #FAE8CC;
+}
+
+.hide {
+    display: none;
+}
+
+.menu {
+    /* structure */
+    padding-left: 0;
+    /* presentation */
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0.5em 0.25em;
+}
+
+.standard-form label {
+    /* structure */
+    display: inline-block;
+    width: 8em;
+    /* presentation */
+    color: #00968B;
+    text-align: right;
+}
+
+.standard-form ul {
+    /* structure */
+    padding-left: 0;
+    /* presentation */
+    list-style-type: none;
+}
+
+.standard-form ul li {
+    margin: 1em 0;
+}
+
+aside {
+    border: solid 5px black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+input#save-contact {
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+}

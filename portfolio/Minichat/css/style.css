@@ -1,0 +1,26 @@
+.form_align input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputbasic {
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 10px;
+  transition: all 0.5s linear;
+}
+
+.inputbasic:focus {
+  background-color: lightgrey;
+  color: white;
+}
+
+.form_align input[type=submit] {
+  background-color: lightgrey;
+  border: 1px solid red;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+}
